@@ -245,9 +245,9 @@ export default function Projects() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedProject(null)}
-              className="fixed inset-0 bg-black/90 backdrop-blur-3xl z-[100] cursor-zoom-out"
+              className="fixed inset-0 bg-black/90 backdrop-blur-3xl z-[9998] cursor-zoom-out"
             />
-            <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 md:p-12 pointer-events-none">
+            <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 md:p-12 pointer-events-none">
               <motion.div
                 layoutId={`card-${selectedProject.id}`}
                 className="w-full max-w-6xl h-[85vh] md:h-auto md:aspect-[16/9] bg-[#080808] border border-white/10 rounded-[2rem] md:rounded-[3rem] overflow-hidden pointer-events-auto flex flex-col md:flex-row relative shadow-2xl"
@@ -266,7 +266,7 @@ export default function Projects() {
                 <div className="w-full md:w-2/5 p-6 md:p-12 flex flex-col flex-1 bg-[#080808] border-t md:border-t-0 md:border-l border-white/5 overflow-y-auto scrollbar-hide">
                   <button 
                     onClick={() => setSelectedProject(null)}
-                    className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/10 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/20 hover:border-brand/40 transition-all group z-[120] backdrop-blur-xl"
+                    className="absolute top-6 right-6 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/20 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/30 hover:border-brand/40 transition-all group z-[120] backdrop-blur-3xl shadow-xl"
                   >
                     <X size={18} className="group-hover:rotate-90 transition-transform" />
                   </button>
