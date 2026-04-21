@@ -250,9 +250,9 @@ export default function Projects() {
             <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 md:p-12 pointer-events-none">
               <motion.div
                 layoutId={`card-${selectedProject.id}`}
-                className="w-full max-w-6xl h-auto max-h-[90vh] md:aspect-[16/9] bg-[#080808] border border-white/10 rounded-[2rem] md:rounded-[3rem] overflow-hidden pointer-events-auto flex flex-col md:flex-row relative shadow-2xl"
+                className="w-full max-w-6xl h-[85vh] md:h-auto md:aspect-[16/9] bg-[#080808] border border-white/10 rounded-[2rem] md:rounded-[3rem] overflow-hidden pointer-events-auto flex flex-col md:flex-row relative shadow-2xl"
               >
-                <div className="w-full md:w-3/5 h-[250px] md:h-full relative overflow-hidden bg-black shrink-0">
+                <div className="w-full md:w-3/5 h-[40%] md:h-full relative overflow-hidden bg-black shrink-0">
                   <motion.img
                     layoutId={`image-${selectedProject.id}`}
                     src={selectedProject.image}
@@ -263,15 +263,15 @@ export default function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
                 </div>
 
-                <div className="w-full md:w-2/5 p-6 md:p-12 flex flex-col h-full bg-[#080808] border-t md:border-t-0 md:border-l border-white/5 overflow-y-auto custom-scrollbar">
+                <div className="w-full md:w-2/5 p-6 md:p-12 flex flex-col flex-1 bg-[#080808] border-t md:border-t-0 md:border-l border-white/5 overflow-y-auto scrollbar-hide">
                   <button 
                     onClick={() => setSelectedProject(null)}
-                    className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-brand/40 transition-all group z-[110] backdrop-blur-md"
+                    className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/10 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/20 hover:border-brand/40 transition-all group z-[120] backdrop-blur-xl"
                   >
                     <X size={18} className="group-hover:rotate-90 transition-transform" />
                   </button>
 
-                  <div className="flex gap-2 mb-6 md:mb-8">
+                  <div className="flex gap-2 mb-4 md:mb-8">
                      {selectedProject.tags.map((tag: string) => (
                        <span key={tag} className="text-[7px] md:text-[8px] font-black uppercase tracking-widest text-brand border border-brand/20 px-3 py-1 rounded-full">
                          {tag}
@@ -281,21 +281,21 @@ export default function Projects() {
 
                   <motion.h2 
                     layoutId={`title-${selectedProject.id}`}
-                    className="text-2xl md:text-6xl font-black mb-4 md:mb-8 uppercase tracking-tighter leading-none italic"
+                    className="text-2xl md:text-5xl lg:text-6xl font-black mb-4 md:mb-8 uppercase tracking-tighter leading-none italic"
                   >
                     {selectedProject.title}
                   </motion.h2>
 
-                  <p className="text-white/40 text-xs md:text-sm leading-relaxed mb-8 md:mb-12 font-light">{selectedProject.fullDesc}</p>
+                  <p className="text-white/40 text-[11px] md:text-sm leading-relaxed mb-8 md:mb-12 font-light">{selectedProject.fullDesc}</p>
                   
-                  <div className="mt-auto flex flex-col sm:flex-row gap-4">
+                  <div className="mt-auto flex flex-col sm:flex-row gap-3">
                      <a 
                       href={selectedProject.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand text-white text-[9px] font-black uppercase tracking-widest rounded-xl md:rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-lg shadow-brand/20"
+                      className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-brand text-white text-[9px] font-black uppercase tracking-widest rounded-xl md:rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-lg"
                      >
-                       Launch Project <ExternalLink size={14} />
+                       Launch Console <ExternalLink size={14} />
                      </a>
                      <div className="flex gap-2 justify-center sm:justify-start">
                         <div className="w-12 h-12 rounded-xl md:rounded-2xl border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:border-brand transition-all">
