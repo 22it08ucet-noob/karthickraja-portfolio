@@ -250,9 +250,9 @@ export default function Projects() {
             <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 md:p-12 pointer-events-none">
               <motion.div
                 layoutId={`card-${selectedProject.id}`}
-                className="w-full max-w-6xl aspect-video md:aspect-[16/9] bg-[#080808] border border-white/10 rounded-[3rem] overflow-hidden pointer-events-auto flex flex-col md:flex-row relative"
+                className="w-full max-w-6xl h-auto max-h-[90vh] md:aspect-[16/9] bg-[#080808] border border-white/10 rounded-[2rem] md:rounded-[3rem] overflow-hidden pointer-events-auto flex flex-col md:flex-row relative shadow-2xl"
               >
-                <div className="w-full md:w-3/5 h-full relative overflow-hidden bg-black">
+                <div className="w-full md:w-3/5 h-[250px] md:h-full relative overflow-hidden bg-black shrink-0">
                   <motion.img
                     layoutId={`image-${selectedProject.id}`}
                     src={selectedProject.image}
@@ -263,12 +263,12 @@ export default function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
                 </div>
 
-                <div className="w-full md:w-2/5 p-8 md:p-16 flex flex-col h-full bg-[#080808] border-l border-white/5">
+                <div className="w-full md:w-2/5 p-6 md:p-16 flex flex-col h-full bg-[#080808] border-t md:border-t-0 md:border-l border-white/5 overflow-y-auto">
                   <button 
                     onClick={() => setSelectedProject(null)}
-                    className="absolute top-8 right-8 w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-brand/40 transition-all group"
+                    className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-12 md:h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-brand/40 transition-all group z-50"
                   >
-                    <X size={20} className="group-hover:rotate-90 transition-transform" />
+                    <X size={18} className="group-hover:rotate-90 transition-transform" />
                   </button>
 
                   <div className="flex gap-2 mb-8">
