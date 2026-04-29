@@ -92,7 +92,7 @@ export default function App() {
            transition={{ duration: 1 }}
         >
           <Navbar />
-          <main className="relative z-10">
+          <main className="relative">
             <Hero />
             
             <motion.div
