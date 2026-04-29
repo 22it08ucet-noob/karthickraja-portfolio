@@ -4,15 +4,6 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const projects = [
   {
-    id: 'xpressions',
-    title: 'Xpressions 2K24',
-    description: 'The flagship cultural extravaganza of Amrita Vishwa Vidyapeetham, Chennai.',
-    tags: ['Event', 'Cultural'],
-    image: 'https://plain-apac-prod-public.komododecks.com/202604/29/cbdPzxZhlf9ECqJTTfJH/image.jpg',
-    link: '#',
-    fullDesc: 'Xpressions 2K24 is the ultimate celebration of talent, art, and culture at Amrita Chennai. Bringing together students from all over to showcase their skills in music, dance, fashion, and more. A two-day festival of pure energy and creativity.'
-  },
-  {
     id: 'eco',
     title: 'ECOSERVE – Sustainable Packaging',
     description: 'A modern website for an eco-friendly packaging company in India, promoting sustainable solutions.',
@@ -119,6 +110,15 @@ const projects = [
     image: 'https://plain-apac-prod-public.komododecks.com/202604/21/KZQ6lExEUJmdGpeJWVwm/image.png',
     link: 'https://hirelens-ai-ukf3.onrender.com',
     fullDesc: 'HireLens AI helps candidates optimize their resumes for ATS systems. It provides deep skill-gap analysis, keyword suggestions, and personalized advice based on target job descriptions.'
+  },
+  {
+    id: 'codeum-nanum',
+    title: 'Codeum Nanum',
+    description: 'A professional technical platform and resource hub built for sharing developer insights and showcases.',
+    tags: ['Next.js', 'Vercel'],
+    image: 'https://plain-apac-prod-public.komododecks.com/202604/29/cbdPzxZhlf9ECqJTTfJH/image.jpg',
+    link: 'https://nanum-codeum.vercel.app/',
+    fullDesc: 'Codeum Nanum is a dedicated space for technical content, project showcases, and developer resources. It features a high-performance architecture optimized for SEO and readability, providing a seamless experience for the tech community.'
   }
 ];
 
