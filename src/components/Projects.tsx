@@ -4,6 +4,15 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const projects = [
   {
+    id: 'xpressions',
+    title: 'Xpressions 2K24',
+    description: 'The flagship cultural extravaganza of Amrita Vishwa Vidyapeetham, Chennai.',
+    tags: ['Event', 'Cultural'],
+    image: 'https://plain-apac-prod-public.komododecks.com/202604/29/cbdPzxZhlf9ECqJTTfJH/image.jpg',
+    link: '#',
+    fullDesc: 'Xpressions 2K24 is the ultimate celebration of talent, art, and culture at Amrita Chennai. Bringing together students from all over to showcase their skills in music, dance, fashion, and more. A two-day festival of pure energy and creativity.'
+  },
+  {
     id: 'eco',
     title: 'ECOSERVE – Sustainable Packaging',
     description: 'A modern website for an eco-friendly packaging company in India, promoting sustainable solutions.',
