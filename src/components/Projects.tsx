@@ -119,6 +119,15 @@ const projects = [
     image: 'https://plain-apac-prod-public.komododecks.com/202604/29/cbdPzxZhlf9ECqJTTfJH/image.jpg',
     link: 'https://nanum-codeum.vercel.app/',
     fullDesc: 'Codeum Nanum is a dedicated space for technical content, project showcases, and developer resources. It features a high-performance architecture optimized for SEO and readability, providing a seamless experience for the tech community.'
+  },
+  {
+    id: 'porkaalam',
+    title: 'Porkaalam',
+    description: 'A creative digital platform showcasing innovative web experiences and modern development techniques.',
+    tags: ['Web Design', 'Performance'],
+    image: 'https://plain-apac-prod-public.komododecks.com/202605/19/xJHmgCguMPqIV7CvQlaN/image.jpg',
+    link: 'https://porkaalam.vercel.app/',
+    fullDesc: 'Porkaalam is a sophisticated web environment built to deliver high-impact digital solutions. It combines minimalist aesthetics with robust functionality, focusing on seamless user interactions and top-tier performance benchmarks.'
   }
 ];
 
